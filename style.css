@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 17px;
+  height: fit-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.container {
+  width: 700px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+
+.acc-btn {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  
+}
+
+.acc-btn:hover {
+  transform: rotate(90deg);
+  color: rgb(95, 93, 93);
+}
+
+.acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.acc-item{
+  background-color: rgb(248, 248, 248);
+  margin: 0 0 1.6rem 0;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.acc-question{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+padding: 1rem;
+}
+.acc-question h3{
+  font-size: 18px;
+
+}
+
+.acc-content{
+background-color: rgb(236, 236, 236);
+}
+
+.acc-content p{
+  padding: 1rem;
+}
+
+@media(max-width: 700px){
+  .container{
+    width: 100%;
+  }
+
+  .acc-content p{
+    font-size: 15px;
+  }
+
+  .acc-question h3{
+    font-size: 17px;
+  }
+
+}
